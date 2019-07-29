@@ -1,0 +1,30 @@
+.wrap{
+  display:flex;
+  flex-direction:row;
+  border-bottom: 1px solid #cccccc;
+  margin-top: 10px;
+  &:last-child{
+    border-bottom: none;
+  }
+  &:first-child{
+    border-top:none;
+  }
+
+  max-width: 100%;
+  max-height: 180px;
+  min-height: 150px;
+
+  .book_image{
+    display: flex;
+    flex: 2;
+    margin-left: 10px;
+  }
+
+  .description{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
+
