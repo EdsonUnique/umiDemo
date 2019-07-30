@@ -1,6 +1,6 @@
 package book.server.entityMapper;
 
-import book.server.entity.Book;
+import book.server.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author Edson
  * @since 2019-07-30
  */
-public interface BookMapper extends BaseMapper<Book> {
+public interface UserMapper extends BaseMapper<User> {
 
 }

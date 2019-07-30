@@ -15,8 +15,7 @@ export default{
     setup({dispatch,history}){
 
       history.listen((pathname,query)=>{
-        //监听路径变化
-        // console.log(pathname)
+
       })
     }
   }

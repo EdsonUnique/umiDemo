@@ -10,7 +10,7 @@ public enum RestMsg {
 
     private String msg;
 
-    private RestMsg(int code, String msg){
+    RestMsg(int code, String msg){
         this.code=code;
         this.msg=msg;
     }

@@ -66,8 +66,8 @@ class FooterNav extends Component{
             }
             selectedIcon={<Icon type="bars" style={{fontSize:'24px'}}/>
             }
-            selected={this.state.selectedTab === 'index'}
-            onPress={() => this.handleRouter('index','/')}
+            selected={this.state.selectedTab === 'login.js'}
+            onPress={() => this.handleRouter('login.js','/')}
 
           >
             {/*{this.renderContent('Life')}*/}

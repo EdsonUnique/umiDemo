@@ -1,4 +1,7 @@
 import {fetchBookList,fetchTagList,fetchListByTagId,fetchListByNameAndAuthor} from "@/services/bookApi"
+import GlobalEnum from '@/utils/GlobalEnum';
+import router from 'umi/router'
+import { routerRedux } from 'dva/router';
 
 export default {
 
@@ -78,6 +81,9 @@ export default {
 
     },
 
+    *goLogin({payload},{put,call}){
+
+    },
 
   },
 
@@ -111,6 +117,22 @@ export default {
     }
 
 
+  },
+
+  subscriptions:{
+    setup({ dispatch, history }) {
+      history.listen(({pathname,query})=>{
+        if(pathname.includes('/ViewBook')){
+          //判断登录
+          if(null===sessionStorage.getItem(GlobalEnum.sessionUserKey)){
+
+           history.location.pathname="/Login"
+            // history.go("/Login")
+            // router.push("/Login")
+          }
+        }
+      })
+    }
   }
 
 }

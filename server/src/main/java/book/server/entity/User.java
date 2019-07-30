@@ -1,5 +1,6 @@
 package book.server.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -19,33 +20,24 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class Book implements Serializable {
+public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId("id")
+    @TableField("id")
     private String id;
 
-    @TableField("book_name")
-    private String bookName;
+    @TableId(value = "account", type = IdType.AUTO)
+    private Integer account;
 
-    @TableField("author")
-    private String author;
+    @TableField("pwd")
+    private String pwd;
 
-    @TableField("publisher")
-    private String publisher;
+    @TableField("nickname")
+    private String nickname;
 
-    @TableField("publish_date")
-    private LocalDateTime publishDate;
-
-    @TableField("description")
-    private String description;
-
-    @TableField("content")
-    private String content;
-
-    @TableField("tag_id")
-    private Integer tagId;
+    @TableField("phone_number")
+    private String phoneNumber;
 
     @TableField("create_time")
     private LocalDateTime createTime;

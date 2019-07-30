@@ -1,11 +1,11 @@
-import {fetchBookList} from '@/services/bookApi'
+import {login} from '@/services/userApi'
 
 export default {
 
   namespace:'user',
 
   state:{
-    info:[]
+    userInfo:{},
   },
 
   //异步请求
@@ -13,7 +13,7 @@ export default {
 
     *login({payload},{call,put}){
 
-      const response=yield call(fetchBookList)
+      const response=yield call(login(payload))
       console.log(response.data)
 
       yield put({

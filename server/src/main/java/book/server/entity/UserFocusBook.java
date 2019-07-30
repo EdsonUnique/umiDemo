@@ -1,6 +1,7 @@
 package book.server.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
+import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.TableField;
 import java.io.Serializable;
 import lombok.Data;
@@ -18,18 +19,24 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class Tag implements Serializable {
+public class UserFocusBook implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @TableId("id")
     private Integer id;
 
-    /**
-     * 标签名
-     */
-    @TableField("name")
-    private String name;
+    @TableField("user_id")
+    private String userId;
+
+    @TableField("book_id")
+    private String bookId;
+
+    @TableField("create_time")
+    private LocalDateTime createTime;
+
+    @TableField("update_time")
+    private LocalDateTime updateTime;
 
 
 }
