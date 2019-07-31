@@ -1,5 +1,13 @@
-import {get,post} from '@/utils/request'
+import request from '@/utils/request';
+import { stringify } from 'qs';
+import GlobalEnum from '@/utils/GlobalEnum';
 
-export function login(param) {
-  return post("/user/login",{account:21,pwd:"12"})
+export async function login(params) {
+  return request(GlobalEnum.location+"/user/login",{
+    method:'POST',
+    body:{
+      ...params
+    }
+
+  })
 }

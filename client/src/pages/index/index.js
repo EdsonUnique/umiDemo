@@ -50,7 +50,7 @@ class IndexPage extends Component{
           好友分享：时光机、信息爆炸、梦龙、大海、励志、打得开、点击、出的长度、打开
         </NoticeBar>
           {
-            bookList.map(item=>{
+           bookList!=undefined && bookList.length>0 && bookList.map(item=>{
               return <BookItem key={item.id} data={item} />
             })
           }

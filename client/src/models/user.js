@@ -1,11 +1,14 @@
 import {login} from '@/services/userApi'
+import GlobalEnum from '@/utils/GlobalEnum';
+import {Toast} from 'antd-mobile';
+import router from "umi/router"
 
 export default {
 
   namespace:'user',
 
   state:{
-    userInfo:{},
+
   },
 
   //异步请求
@@ -13,15 +16,19 @@ export default {
 
     *login({payload},{call,put}){
 
-      const response=yield call(login(payload))
-      console.log(response.data)
+      const response=yield call(login,payload)
+      if(response.data===null){
+        Toast.info("用户名或密码错误")
+        return;
+      }
 
-      yield put({
-        type:"save",
-        payload:{
-          info:response.data,
-        }
-      })
+      const user=response.data;
+
+      sessionStorage.setItem(GlobalEnum.sessionUserKey,JSON.stringify(user));
+
+      Toast.info("登录成功")
+
+      router.push("/")
     },
 
     *register({payload},{call,put}){

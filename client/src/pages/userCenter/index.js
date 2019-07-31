@@ -1,21 +1,46 @@
 import styles from './index.less'
 import React,{Component} from 'react';
 import { Avatar } from 'antd';
-import { List } from 'antd-mobile';
+import { List, WhiteSpace } from 'antd-mobile';
+import GlobalEnum from '@/utils/GlobalEnum';
+import router from 'umi/router'
 
 const Item = List.Item;
 const Brief = Item.Brief;
 
 class UserCenter extends Component{
 
+  handleGoLogin=()=>{
+    router.push("/Login")
+  };
+
+  handleLogin=(user)=>{
+    if(user){
+      //已登录
+      return (
+        <p>男   22岁</p>
+      )
+    }else{
+      return (
+        <p><a onClick={this.handleGoLogin}>请先登录</a></p>
+      )
+    }
+  }
+
   render(){
+
+    const user=JSON.parse(sessionStorage.getItem(GlobalEnum.sessionUserKey));
+
     return (
       <div className={styles.wrap}>
 
           <div className={styles.header}>
             <Avatar style={{ backgroundColor: '#87d068'}} size={64} icon="user" />
-            <p>username</p>
-            <p>男   22岁</p>
+            <WhiteSpace/>
+            <p>{user?user.nickname:"您还未登录"}</p>
+            {
+              this.handleLogin(user)
+            }
           </div>
           <div className={styles.items}>
             <div>

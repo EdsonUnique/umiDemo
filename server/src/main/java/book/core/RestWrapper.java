@@ -14,6 +14,15 @@ public class RestWrapper {
         return resultVO;
     }
 
+    public static RestVO success(String message,Object data){
+        RestVO resultVO=new RestVO();
+        resultVO.setCode(RestMsg.SUCCESS.getCode());
+        resultVO.setMsg(message);
+        resultVO.setData(data);
+
+        return resultVO;
+    }
+
     public static RestVO success(){
         RestVO resultVO=new RestVO();
         resultVO.setCode(RestMsg.SUCCESS.getCode());
@@ -25,6 +34,13 @@ public class RestWrapper {
         RestVO resultVO=new RestVO();
         resultVO.setCode(RestMsg.FAILURE.getCode());
         resultVO.setMsg(RestMsg.FAILURE.getMsg());
+        return resultVO;
+    }
+
+    public static RestVO error(String messge){
+        RestVO resultVO=new RestVO();
+        resultVO.setCode(RestMsg.FAILURE.getCode());
+        resultVO.setMsg(messge);
         return resultVO;
     }
 

@@ -39,11 +39,11 @@ class Condition extends Component{
     return(
 
       <div className={styles.wrap}>
-        <div key={tagList.length+1} onClick={()=>this.handleConditionAll()}>
+        <div key={tagList?tagList.length+1:""} onClick={()=>this.handleConditionAll()}>
           全部
         </div>
         {
-          tagList.length>0 && tagList.map((item)=>{
+          tagList!=undefined && tagList.length>0 && tagList.map((item)=>{
             return (
               <div onClick={()=>this.handleCondition(item.id)} key={item.id}>
                 {item.name}

@@ -2,6 +2,7 @@ package book.server.service.impl;
 
 import book.server.entity.User;
 import book.server.entityMapper.UserMapper;
+import book.server.model.UserModel;
 import book.server.service.UserService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
@@ -18,11 +19,11 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-    public User fetchUserByAccountAndPwd(Integer account, String pwd) {
+    public User fetchUserByAccountAndPwd(UserModel userModel) {
 
         LambdaQueryWrapper<User> qw= Wrappers.<User>lambdaQuery();
-        qw.eq(!isNull(account),User::getAccount,account)
-            .eq(!isBlank(pwd),User::getPwd,pwd);
+        qw.eq(!isNull(userModel.getAccount()),User::getAccount,userModel.getAccount())
+            .eq(!isBlank(userModel.getPwd()),User::getPwd,userModel.getPwd());
 
         return userMapper.selectOne(qw);
     }

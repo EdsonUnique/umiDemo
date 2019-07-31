@@ -1,7 +1,7 @@
-import {fetchBookList,fetchTagList,fetchListByTagId,fetchListByNameAndAuthor} from "@/services/bookApi"
+import {fetchBookList,fetchTagList,addToShelf,fetchListByTagId,fetchListByNameAndAuthor,goLogin} from "@/services/bookApi"
 import GlobalEnum from '@/utils/GlobalEnum';
 import router from 'umi/router'
-import { routerRedux } from 'dva/router';
+import { Toast } from 'antd-mobile';
 
 export default {
 
@@ -42,7 +42,7 @@ export default {
 
     *fetchListByTagId({payload},{call,put}){
 
-      const response=yield call(()=>fetchListByTagId(payload))
+      const response=yield call(fetchListByTagId,payload)
 
       yield put({
         type:"fetchListByTagIdSuccess",
@@ -68,7 +68,7 @@ export default {
 
     *search({payload},{call,put}){
 
-      const response=yield call(()=>fetchListByNameAndAuthor(payload.value));
+      const response=yield call(fetchListByNameAndAuthor,payload);
 
       // if(response.errors.length>0){
       //   return ;
@@ -81,8 +81,21 @@ export default {
 
     },
 
-    *goLogin({payload},{put,call}){
+    *addToShelf({payload},{put,call}){
 
+      const response=yield call(addToShelf,payload);
+
+      Toast.info(response.msg);
+     
+    },
+
+    *goLogin({payload},{put,call}){
+      // const response = yield call(goLogin);
+      // yield put({
+      //   type: 'save',
+      //   payload: response,
+      // });
+      // router.push("/Login")
     },
 
   },
@@ -92,43 +105,52 @@ export default {
     fetchBookListSuccess(state,{payload}){
       return {
         ...state,
-        bookList:payload.data,
+        bookList:payload,
       }
     },
 
     fetchTagListSuccess(state,{payload}){
       return {
         ...state,
-        tagList:payload.data,
+        tagList:payload,
       }
     },
     fetchListByTagIdSuccess(state,{payload}){
       return {
         ...state,
-        bookList:payload.data,
+        bookList:payload,
       }
     },
 
     fetchListByNameAndAuthorSuccess(state,{payload}){
       return {
         ...state,
-        bookList:payload.data,
+        bookList:payload,
       }
-    }
+    },
+
+    save(state){
+      return {
+        ...state,
+      }
+    },
 
 
   },
 
   subscriptions:{
     setup({ dispatch, history }) {
-      history.listen(({pathname,query})=>{
-        if(pathname.includes('/ViewBook')){
+      return history.listen(({pathname,query})=>{
+        if(pathname === '/ViewBook'){
           //判断登录
           if(null===sessionStorage.getItem(GlobalEnum.sessionUserKey)){
 
-           history.location.pathname="/Login"
-            // history.go("/Login")
-            // router.push("/Login")
+            history.location.pathname="/Login";
+            history.location.query=null;
+           dispatch({
+             type:"goLogin",
+             payload:null,
+           })
           }
         }
       })

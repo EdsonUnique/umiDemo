@@ -1,19 +1,25 @@
-import {get,post} from '@/utils/request'
+import request from '@/utils/request';
+import { stringify } from 'qs';
+import GlobalEnum from '@/utils/GlobalEnum';
 
-export function fetchBookList() {
-  return get("/book/fetchBookList")
+export async function fetchBookList() {
+  return request(GlobalEnum.location+"/book/fetchBookList")
 }
 
-export function fetchTagList() {
-  return get("/book/fetchTagList")
+export async function fetchTagList() {
+  return request(GlobalEnum.location+"/book/fetchTagList")
 }
 
-export function fetchListByTagId(param) {
-  return get("/book/fetchListByTagId?id="+param.id)
+export async function fetchListByTagId(param) {
+  return request(GlobalEnum.location+`/book/fetchListByTagId?${stringify(param)}`)
 }
 
-export function fetchListByNameAndAuthor(param) {
-  return get("/book/fetchListByNameAndAuthor?queryString="+param)
+export async function fetchListByNameAndAuthor(param) {
+  return request(GlobalEnum.location+`/book/fetchListByNameAndAuthor?${stringify(param)}`)
+}
+
+export async function addToShelf(param) {
+  return request(GlobalEnum.location+`/book/addToShelf/${param.id}`)
 }
 
 

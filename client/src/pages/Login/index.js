@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import styles from './login.less'
-import { NavBar, Icon ,List,InputItem,Button,WhiteSpace} from 'antd-mobile';
+import { NavBar, Icon ,List,InputItem,Button,WhiteSpace,Toast} from 'antd-mobile';
 import { createForm } from 'rc-form';
 import { connect } from 'dva';
 
@@ -23,6 +23,7 @@ class Login extends Component{
   };
 
   getChangeAccount=(value)=>{
+
     this.setState({
       account:value,
 
@@ -30,6 +31,7 @@ class Login extends Component{
   };
 
   getChangePwd=(value)=>{
+
     this.setState({
       pwd:value,
 
@@ -38,6 +40,16 @@ class Login extends Component{
 
   handleSubmit=()=>{
     const {dispatch}=this.props;
+
+    if(!this.state.account || this.state.account.trim()===""){
+      Toast.info("账号不能为空")
+      return;
+    }
+
+    if(!this.state.pwd || this.state.pwd.trim()===""){
+      Toast.info("密码不能为空")
+      return;
+    }
 
     dispatch({
       type:"user/login",

@@ -14,7 +14,7 @@ class Search extends Component{
     dispatch({
       type:"book/search",
       payload:{
-        value:value,
+        queryString:value,
       },
     })
   };
