@@ -1,8 +1,8 @@
 import React,{Component} from 'react'
 import styles from './login.less'
 import { NavBar, Icon ,List,InputItem,Button,WhiteSpace,Toast} from 'antd-mobile';
-import { createForm } from 'rc-form';
 import { connect } from 'dva';
+import router from 'umi/router'
 
 
 @connect(({user})=>({
@@ -60,6 +60,10 @@ class Login extends Component{
     })
   };
 
+  handleGoRegister=()=>{
+    router.push("/Register")
+  };
+
   render(){
 
 
@@ -89,7 +93,11 @@ class Login extends Component{
           <WhiteSpace/>
           <WhiteSpace/>
           <Button type="ghost" size="small" onClick={()=>this.handleSubmit()} style={{width:"40%",marginLeft:"30%"}} >登录</Button>
-
+          <WhiteSpace/>
+          <WhiteSpace/>
+        <p style={{textAlign:'right'}}>
+            <a onClick={this.handleGoRegister}>还没有账号？请先注册 >>></a>
+        </p>
       </div>
     )
   }

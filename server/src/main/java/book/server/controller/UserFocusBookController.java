@@ -39,7 +39,7 @@ public class UserFocusBookController {
             UserFocusBook data=userFocusBookService.addToShelf(user.getId(),bookId);
             return RestWrapper.success("添加成功！",data);
         }catch (Exception e){
-            e.printStackTrace();
+            System.err.println(e.getMessage());
             return RestWrapper.error(e.getMessage());
         }
 

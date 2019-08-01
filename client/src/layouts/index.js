@@ -10,6 +10,9 @@ export default function(props) {
     case '/Login':{
       return <FullScreenLayout>{props.children}</FullScreenLayout>
     }
+    case '/Register':{
+      return <FullScreenLayout>{props.children}</FullScreenLayout>
+    }
     default:{
       return <BasicLayout>{props.children}</BasicLayout>
     }

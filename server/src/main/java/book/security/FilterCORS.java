@@ -19,7 +19,7 @@ public class FilterCORS implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletResponse resp = (HttpServletResponse)servletResponse;
-        resp.setHeader("Access-Control-Allow-Origin", "http://localhost:8000");
+        resp.setHeader("Access-Control-Allow-Origin", "http://192.168.11.53:8000");
         resp.setHeader("Access-Control-Allow-Headers", "Content-Type");
         resp.addHeader("Access-Control-Allow-Headers","Access-Control-Allow-Origin");
         resp.addHeader("Access-Control-Allow-Headers"," x-requested-with");

@@ -86,7 +86,7 @@ export default {
       const response=yield call(addToShelf,payload);
 
       Toast.info(response.msg);
-     
+
     },
 
     *goLogin({payload},{put,call}){
