@@ -1,6 +1,6 @@
 package book.server.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
+import java.time.LocalDate;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -15,7 +15,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author Edson
- * @since 2019-07-31
+ * @since 2019-08-02
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -27,14 +27,20 @@ public class User implements Serializable {
     @TableField("id")
     private String id;
 
-    @TableId(value = "account", type = IdType.AUTO)
-    private Integer account;
-
-    @TableField("pwd")
+    @TableId("pwd")
     private String pwd;
 
     @TableField("nickname")
     private String nickname;
+
+    /**
+     * 0 女 1 男
+     */
+    @TableField("gender")
+    private Boolean gender;
+
+    @TableField("birth")
+    private LocalDate birth;
 
     @TableField("phone_number")
     private String phoneNumber;

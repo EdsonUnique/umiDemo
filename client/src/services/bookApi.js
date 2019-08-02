@@ -22,6 +22,10 @@ export async function addToShelf(param) {
   return request(GlobalEnum.location+`/book/addToShelf/${param.id}`)
 }
 
+export async function fetchMyShelf() {
+  return request(GlobalEnum.location+`/book/fetchMyShelf`)
+}
+
 
 
 

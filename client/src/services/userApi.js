@@ -11,3 +11,13 @@ export async function login(params) {
 
   })
 }
+
+export async function register(params) {
+  return request(GlobalEnum.location+"/user/register",{
+    method:'POST',
+    body:{
+      ...params
+    }
+
+  })
+}

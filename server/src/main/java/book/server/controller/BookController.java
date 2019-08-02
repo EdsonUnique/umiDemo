@@ -3,7 +3,9 @@ package book.server.controller;
 
 import book.core.RestVO;
 import book.core.RestWrapper;
+import book.server.constants.GlobalConstant;
 import book.server.entity.Tag;
+import book.server.entity.User;
 import book.server.model.BookModel;
 import book.server.model.TagModel;
 import book.server.service.BookService;
@@ -11,6 +13,7 @@ import book.server.service.TagService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @RestController
@@ -55,6 +58,19 @@ public class BookController {
         return RestWrapper.success(data);
 
     }
+
+    @GetMapping("/fetchMyShelf")
+    public RestVO fetchMyShelf(HttpSession httpSession){
+
+        User user=(User)httpSession.getAttribute(GlobalConstant.HTTPSESSION_USER_KEY);
+        if(null==user){
+            return RestWrapper.error("用户未登录");
+        }
+
+        List<BookModel> data=bookService.fetchMyShelf(user.getId());
+        return RestWrapper.success(data);
+    }
+
 
 
 }

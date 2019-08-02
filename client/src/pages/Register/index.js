@@ -1,11 +1,12 @@
 import React ,{Component} from 'react'
 import { List, InputItem, Picker, Button, Icon, NavBar,DatePicker ,Toast,WhiteSpace} from 'antd-mobile';
 import { createForm } from 'rc-form';
+import { connect } from 'dva';
 
 const Item = List.Item;
-
-
-
+@connect(({user})=>({
+  user,
+}))
 class RegisterWrapper extends Component{
 
   state = {
@@ -16,13 +17,21 @@ class RegisterWrapper extends Component{
   };
 
   onSubmit = () => {
+
+    const {dispatch}=this.props;
+
     this.props.form.validateFields({ force: true }, (error) => {
       if (!error) {
-        console.log(this.props.form.getFieldsValue());
-      } else {
-        // alert('Validation failed');
-        // console.log(this.props.form.getFieldsError([]))
-        // Toast.fail("error")
+        const formData=this.props.form.getFieldsValue();
+        formData.gender=(formData.gender)[0];//修改性别传值
+
+        dispatch({
+          type:"user/register",
+          payload:{
+            formData:formData,
+          },
+        })
+
       }
     });
   };
@@ -116,9 +125,14 @@ class RegisterWrapper extends Component{
             // placeholder="please input account"
           >昵称</InputItem>
 
-          <Picker data={genderData} cols={1} {...getFieldProps('gender')} value={this.state.gender} onChange={value=>this.setState({gender:value,})}>
+          <Picker data={genderData}
+                  cols={1}
+                  {...getFieldProps('gender',{initialValue:[1]})}
+               >
             <List.Item arrow="horizontal">性别</List.Item>
           </Picker>
+
+
 
           <DatePicker
             mode="date"
@@ -126,6 +140,9 @@ class RegisterWrapper extends Component{
             minDate={new Date(1919,1,1)}
             maxDate={new Date(2060,1,1)}
             onChange={date => this.setState({ date })}
+            {...getFieldProps('birth',{
+              initialValue: this.state.date,
+            })}
           >
             <List.Item arrow="horizontal">出生日期</List.Item>
           </DatePicker>
@@ -141,15 +158,15 @@ class RegisterWrapper extends Component{
                        Toast.fail(getFieldError('password').join("且"));}}>
             密码
           </InputItem>
-          <InputItem {...getFieldProps('password2', {
+          <InputItem {...getFieldProps('pwd', {
             // initialValue: 'little ant',
             rules: [
               { required: true, message: '确认密码不能为空' },
               { validator: this.validatePassword2 },
             ],})} type="password" clear
-                     error={!!getFieldError('password2')}
+                     error={!!getFieldError('pwd')}
                      onErrorClick={() => {
-                       Toast.fail(getFieldError('password2').join("且"));}}>
+                       Toast.fail(getFieldError('pwd').join("且"));}}>
             确认密码
           </InputItem>
           <InputItem {...getFieldProps('phoneNumber',{

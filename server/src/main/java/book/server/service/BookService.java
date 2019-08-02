@@ -14,4 +14,6 @@ public interface BookService {
 
     List<BookModel> fetchListByNameAndAuthor(String queryString);
 
+    List<BookModel> fetchMyShelf(String userId);
+
 }

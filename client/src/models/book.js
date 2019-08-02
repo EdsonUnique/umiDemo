@@ -1,4 +1,4 @@
-import {fetchBookList,fetchTagList,addToShelf,fetchListByTagId,fetchListByNameAndAuthor,goLogin} from "@/services/bookApi"
+import {fetchBookList,fetchTagList,fetchListByTagId,fetchListByNameAndAuthor} from "@/services/bookApi"
 import GlobalEnum from '@/utils/GlobalEnum';
 import router from 'umi/router'
 import { Toast } from 'antd-mobile';
@@ -81,13 +81,6 @@ export default {
 
     },
 
-    *addToShelf({payload},{put,call}){
-
-      const response=yield call(addToShelf,payload);
-
-      Toast.info(response.msg);
-
-    },
 
     *goLogin({payload},{put,call}){
       // const response = yield call(goLogin);

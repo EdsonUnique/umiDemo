@@ -23,4 +23,11 @@
         where book_name like "%"#{queryString}"%" or author like "%"#{queryString}"%"
     </select>
 
+    <select id="fetchMyShelf" resultType="book.server.model.BookModel">
+        select book.*
+        from book
+                 left join user_focus_book ufb on book.id=ufb.book_id
+        where ufb.user_id=#{userId}
+    </select>
+
 </mapper>

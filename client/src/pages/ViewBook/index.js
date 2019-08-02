@@ -5,8 +5,8 @@ import styles from './index.less'
 import { connect } from 'dva';
 
 const Item = Popover.Item;
-@connect(({book})=>({
-  book,
+@connect(({viewBook})=>({
+  viewBook,
 }))
 class ViewBook extends Component{
 
@@ -23,7 +23,7 @@ class ViewBook extends Component{
     });
 
     dispatch({
-      type:"book/addToShelf",
+      type:"viewBook/addToShelf",
       payload:{
         id:opt.props.value,
       }

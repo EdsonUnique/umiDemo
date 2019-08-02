@@ -28,4 +28,10 @@ public class BookServiceImpl implements BookService {
     public List<BookModel> fetchListByNameAndAuthor(String queryString) {
         return bookModelMapper.fetchListByNameAndAuthor(queryString);
     }
+
+    @Override
+    public List<BookModel> fetchMyShelf(String userId) {
+
+        return bookModelMapper.fetchMyShelf(userId);
+    }
 }

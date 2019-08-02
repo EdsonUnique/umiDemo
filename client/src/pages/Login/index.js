@@ -13,7 +13,7 @@ class Login extends Component{
   constructor(props){
     super(props);
     this.state={
-      account:"",
+      phoneNumber:"",
       pwd:"",
     };
   }
@@ -25,7 +25,7 @@ class Login extends Component{
   getChangeAccount=(value)=>{
 
     this.setState({
-      account:value,
+      phoneNumber:value,
 
     })
   };
@@ -41,7 +41,7 @@ class Login extends Component{
   handleSubmit=()=>{
     const {dispatch}=this.props;
 
-    if(!this.state.account || this.state.account.trim()===""){
+    if(!this.state.phoneNumber || this.state.phoneNumber.trim()===""){
       Toast.info("账号不能为空")
       return;
     }
@@ -54,7 +54,7 @@ class Login extends Component{
     dispatch({
       type:"user/login",
       payload:{
-        account:this.state.account,
+        phoneNumber:this.state.phoneNumber,
         pwd:this.state.pwd,
       }
     })
@@ -84,6 +84,7 @@ class Login extends Component{
           <InputItem
             type="number"
             onChange={(value)=>this.getChangeAccount(value)}
+            placeholder={"请输入手机号"}
           >账号</InputItem>
           <InputItem
             type="password"

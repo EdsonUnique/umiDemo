@@ -11,4 +11,6 @@ public interface BookModelMapper {
     List<BookModel> fetchListByTagId(int tagId);
 
     List<BookModel> fetchListByNameAndAuthor(String queryString);
+
+    List<BookModel> fetchMyShelf(String userId);
 }

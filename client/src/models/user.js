@@ -1,4 +1,4 @@
-import {login} from '@/services/userApi'
+import {login,register} from '@/services/userApi'
 import GlobalEnum from '@/utils/GlobalEnum';
 import {Toast} from 'antd-mobile';
 import router from "umi/router"
@@ -32,6 +32,16 @@ export default {
     },
 
     *register({payload},{call,put}){
+        //注册
+        const response=yield call(register,payload.formData);
+        if(response.code<=0){
+          Toast.fail(response.msg);
+          return;
+        }
+
+        //注册成功后跳转到登陆页面
+      Toast.success(response.msg);
+        router.push("/Login")
 
     },
 

@@ -13,6 +13,9 @@ export default function(props) {
     case '/Register':{
       return <FullScreenLayout>{props.children}</FullScreenLayout>
     }
+    case '/Shelf':{
+      return <FullScreenLayout>{props.children}</FullScreenLayout>
+    }
     default:{
       return <BasicLayout>{props.children}</BasicLayout>
     }
