@@ -30,4 +30,12 @@
         where ufb.user_id=#{userId}
     </select>
 
+    <select id="fetchMyViews" resultType="book.server.model.BookModel">
+        select book.*,uvb.update_time as viewBookDate
+        from book
+                 left join user_view_book uvb on book.id=uvb.book_id
+        where uvb.user_id=#{userId}
+        order by uvb.update_time desc
+    </select>
+
 </mapper>

@@ -9,8 +9,8 @@ import { connect } from 'dva';
 const Item = List.Item;
 const Brief = Item.Brief;
 
-@connect(({userCenter})=>({
-  userCenter,
+@connect(({userCenter,myViews})=>({
+  userCenter,myViews
 }))
 class UserCenter extends Component{
 
@@ -36,6 +36,16 @@ class UserCenter extends Component{
 
     dispatch({
       type:"userCenter/fetchMyShelf"
+    })
+
+  };
+
+  handleMyViews=()=>{
+
+    const {dispatch}=this.props;
+
+    dispatch({
+      type:"myViews/fetchMyViews",
     })
 
   };
@@ -97,7 +107,7 @@ class UserCenter extends Component{
           <div className={styles.contents}>
             <List className="my-list">
               <Item  arrow="horizontal" onClick={this.handleMyShelf}>我的书架</Item>
-              <Item  arrow="horizontal" onClick={() => {}}>我的浏览</Item>
+              <Item  arrow="horizontal" onClick={this.handleMyViews}>我的浏览</Item>
               <Item  arrow="horizontal" onClick={() => {}}>我的笔记</Item>
               <Item  arrow="horizontal" onClick={() => {}}>我的分享</Item>
               <Item  arrow="horizontal" onClick={() => {}}>我的书架</Item>

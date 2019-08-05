@@ -71,6 +71,18 @@ public class BookController {
         return RestWrapper.success(data);
     }
 
+    @GetMapping("/fetchMyViews")
+    public RestVO fetchMyViews(HttpSession httpSession){
+
+        User user=(User)httpSession.getAttribute(GlobalConstant.HTTPSESSION_USER_KEY);
+        if(null==user){
+            return RestWrapper.error("用户未登录");
+        }
+
+        List<BookModel> data=bookService.fetchMyViews(user.getId());
+        return RestWrapper.success(data);
+    }
+
 
 
 }

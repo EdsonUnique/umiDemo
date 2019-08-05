@@ -5,7 +5,12 @@ import moment from 'moment'
 import router from 'umi/router';
 
 import { Tag } from 'antd-mobile';
+import { connect } from 'dva';
+import GlobalEnum from '@/utils/GlobalEnum';
 
+@connect(({myViews})=>({
+  myViews,
+}))
 class BookItem extends Component{
 
   ViewBook=(item)=>{
@@ -15,6 +20,20 @@ class BookItem extends Component{
         payload:item,
       }
     })
+
+    if(null!=sessionStorage.getItem(GlobalEnum.sessionUserKey)){
+      //添加到我的浏览
+      const {dispatch}=this.props;
+
+      dispatch({
+        type:"myViews/recordViews",
+        payload:{
+          id:item.id,
+        }
+      })
+    }
+
+
   };
 
   render() {

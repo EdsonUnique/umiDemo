@@ -37,7 +37,7 @@ class ViewBook extends Component{
   };
 
   goBackToIndex=()=>{
-    router.push("/")
+    router.goBack()
   };
 
   render(){

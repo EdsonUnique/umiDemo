@@ -19,7 +19,7 @@ public class UserModel extends User {
 
     public String getGenderStr() {
 
-        return super.getGender().equals(0)?"女":"男";
+        return super.getGender().equals(false)?"女":"男";
     }
 
     public String getAge() {

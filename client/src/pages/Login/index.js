@@ -19,7 +19,7 @@ class Login extends Component{
   }
 
   goBackToHistory=()=>{
-    window.history.go(-1)
+    router.goBack();
   };
 
   getChangeAccount=(value)=>{
@@ -75,7 +75,6 @@ class Login extends Component{
           leftContent="返回"
           onLeftClick={this.goBackToHistory}
           rightContent={[
-            <Icon key="1" type="ellipsis" />,
           ]}
         >登录</NavBar>
 

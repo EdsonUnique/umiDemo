@@ -5,10 +5,10 @@ import moment from 'moment'
 import router from 'umi/router';
 import GlobalEnum from '@/utils/GlobalEnum';
 
-@connect(({userCenter})=>({
-  userCenter
+@connect(({myViews})=>({
+  myViews
 }))
-class Shelf extends Component{
+class MyViews extends Component{
 
   goBackToHistory=()=>{
     window.history.go(-1);
@@ -35,8 +35,8 @@ class Shelf extends Component{
     }
   };
 
-  handleEmptyShelf=myShelf=>{
-    if(myShelf!=undefined && myShelf.length<=0){
+  handleEmptymyViewsList=myViewsList=>{
+    if(myViewsList!=undefined && myViewsList.length<=0){
       return (
         <div align={"center"}>
           <WhiteSpace/>
@@ -46,13 +46,13 @@ class Shelf extends Component{
         </div>
       )
     }
-  };
+  }
 
   render(){
 
     const {
-      userCenter:{
-        myShelf:myShelf,
+      myViews:{
+        myViewsList:myViewsList,
       }
     }=this.props;
 
@@ -65,29 +65,34 @@ class Shelf extends Component{
           rightContent={[
 
           ]}
-        >我的书架</NavBar>
+        >我的浏览</NavBar>
 
 
         {
-          this.handleEmptyShelf(myShelf)
+          this.handleEmptymyViewsList(myViewsList)
         }
 
-          {
-            myShelf!=undefined && myShelf.length>0 && myShelf.map(item=>{
+        {
+          myViewsList!=undefined && myViewsList.length>0 && myViewsList.map(item=>{
 
-              return(
-                <Card onClick={()=>this.ViewBook(item)} key={item.id}>
-                  <Card.Body>
-                    <div>《 {item.bookName} 》</div>
-                    <div style={{marginLeft:"10%"}}>
-                      {item.description.length>15?item.description.substr(0,15)+"......":item.description}
+            return(
+              <Card onClick={()=>this.ViewBook(item)} key={item.id}>
+                <Card.Body>
+                  <div>
+                    <div>《 {item.bookName} 》
+
                     </div>
-                  </Card.Body>
-                  <Card.Footer content={<div>作者：{item.author}</div>} extra={<div>出版日期：{moment(item.publishDate).format("YYYY-MM-DD")}</div>} />
-                </Card>
-              )
-            })
-          }
+                  </div>
+
+                  <div style={{marginLeft:"10%"}}>
+                    {item.description.length>15?item.description.substr(0,15)+"......":item.description}
+                  </div>
+                </Card.Body>
+                <Card.Footer content={<div>作者：{item.author}</div>} extra={<div>{moment(item.viewBookDate).format("YYYY-MM-DD HH:MM")}</div>} />
+              </Card>
+            )
+          })
+        }
 
       </div>
     )
@@ -96,4 +101,4 @@ class Shelf extends Component{
 
 }
 
-export default Shelf
+export default MyViews

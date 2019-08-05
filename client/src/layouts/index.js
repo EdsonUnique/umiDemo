@@ -16,6 +16,9 @@ export default function(props) {
     case '/Shelf':{
       return <FullScreenLayout>{props.children}</FullScreenLayout>
     }
+    case '/MyViews':{
+      return <FullScreenLayout>{props.children}</FullScreenLayout>
+    }
     default:{
       return <BasicLayout>{props.children}</BasicLayout>
     }

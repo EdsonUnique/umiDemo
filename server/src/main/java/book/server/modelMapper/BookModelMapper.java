@@ -13,4 +13,6 @@ public interface BookModelMapper {
     List<BookModel> fetchListByNameAndAuthor(String queryString);
 
     List<BookModel> fetchMyShelf(String userId);
+
+    List<BookModel> fetchMyViews(String userId);
 }

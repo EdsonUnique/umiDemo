@@ -34,4 +34,10 @@ public class BookServiceImpl implements BookService {
 
         return bookModelMapper.fetchMyShelf(userId);
     }
+
+    @Override
+    public List<BookModel> fetchMyViews(String userId) {
+
+        return bookModelMapper.fetchMyViews(userId);
+    }
 }

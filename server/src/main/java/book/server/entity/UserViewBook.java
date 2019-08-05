@@ -19,33 +19,18 @@ import lombok.experimental.Accessors;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class Book implements Serializable {
+public class UserViewBook implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @TableId("id")
     private String id;
 
-    @TableField("book_name")
-    private String bookName;
+    @TableField("user_id")
+    private String userId;
 
-    @TableField("author")
-    private String author;
-
-    @TableField("publisher")
-    private String publisher;
-
-    @TableField("publish_date")
-    private LocalDateTime publishDate;
-
-    @TableField("description")
-    private String description;
-
-    @TableField("content")
-    private String content;
-
-    @TableField("tag_id")
-    private Integer tagId;
+    @TableField("book_id")
+    private String bookId;
 
     @TableField("create_time")
     private LocalDateTime createTime;
