@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author Edson
- * @since 2019-08-05
+ * @since 2019-08-07
  */
 public interface TagMapper extends BaseMapper<Tag> {
 

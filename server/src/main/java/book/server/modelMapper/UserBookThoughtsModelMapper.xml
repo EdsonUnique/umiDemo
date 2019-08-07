@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="book.server.modelMapper.UserBookThoughtsModelMapper">
+
+    <select id="fetchBookThoughts" resultType="book.server.model.UserBookThoughtsModel">
+        select ubt.*,user.nickname as nickname
+        from user_book_thoughts ubt
+            left join user on user.id=ubt.user_id
+        where ubt.book_id=#{bookId}
+    </select>
+
+</mapper>

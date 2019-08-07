@@ -27,6 +27,22 @@ export async function fetchMyShelf() {
 }
 
 
+export async function fetchBookThoughts(param) {
+  return request(GlobalEnum.location+`/book/thoughts/fetchBookThoughts/${param.id}`)
+}
+
+export async function addThoughts(param) {
+
+  return request(GlobalEnum.location+`/book/thoughts/addThoughts`,{
+    method:'POST',
+    body:{
+      ...param,
+    }
+
+  })
+}
+
+
 
 
 

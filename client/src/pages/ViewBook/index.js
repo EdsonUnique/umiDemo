@@ -3,10 +3,11 @@ import { NavBar, Icon,Popover } from 'antd-mobile';
 import router from 'umi/router'
 import styles from './index.less'
 import { connect } from 'dva';
+import ReadingThoughts from '@/components/ReadingThoughts';
 
 const Item = Popover.Item;
-@connect(({viewBook})=>({
-  viewBook,
+@connect(({viewBook,readingThoughts})=>({
+  viewBook,readingThoughts,
 }))
 class ViewBook extends Component{
 
@@ -22,12 +23,23 @@ class ViewBook extends Component{
       visible: false,
     });
 
-    dispatch({
-      type:"viewBook/addToShelf",
-      payload:{
-        id:opt.props.value,
-      }
-    })
+
+    if(opt.props.namekey==1){
+      dispatch({
+        type:"viewBook/addToShelf",
+        payload:{
+          id:opt.props.value,
+        }
+      })
+    }else if(opt.props.namekey==2){
+      //查看评论
+      dispatch({
+        type:"readingThoughts/fetchBookThoughts",
+        payload:{
+          id:opt.props.value,
+        }
+      })
+    }
 
   };
   handleVisibleChange = (visible) => {
@@ -59,7 +71,8 @@ class ViewBook extends Component{
               overlayStyle={{ color: 'currentColor' }}
               visible={this.state.visible}
               overlay={[
-                (<Item key="4" value={item.id} data-seed="logId">添加到书架</Item>),
+                (<Item key="1" value={item.id} namekey="1" data-seed="logId">添加到书架</Item>),
+                (<Item key="2" value={item.id} namekey="2">查看评论</Item>),
               ]}
               align={{
                 overflow: { adjustY: 0, adjustX: 0 },
@@ -83,6 +96,8 @@ class ViewBook extends Component{
         <div className={styles.bookContent}>
           {item.content}
         </div>
+
+        <ReadingThoughts bookId={item.id}/>
       </div>
     )
   }
