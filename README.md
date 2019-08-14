@@ -25,15 +25,14 @@
   - 添加评论
 
 
-![image](images/3.JPG)
+![image](images/阅读书籍.JPG)
 
 ##### 用户中心
 - 用户登录与注册
 - 查看我的书架
 - 查看浏览记录
 
+![image](images/用户中心.JPG)
 
-![image](images/2.JPG)
-
-
+### 更多页面展示图：点击
   
