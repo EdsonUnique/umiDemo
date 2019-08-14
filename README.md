@@ -34,5 +34,5 @@
 
 ![image](images/用户中心.JPG)
 
-### 更多页面展示图：点击
+### 更多页面展示图：[请点击](https://github.com/EdsonUnique/umiDemo/tree/edson/images)
   
