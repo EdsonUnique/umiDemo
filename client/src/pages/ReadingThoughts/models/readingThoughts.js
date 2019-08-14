@@ -38,7 +38,12 @@ export default {
         payload:response.data,
       });
 
-      router.push("/ReadingThoughts")
+      router.push({
+        pathname:"/ReadingThoughts",
+        query:{
+          payload:payload.item,
+        }
+      })
     }
 
   },

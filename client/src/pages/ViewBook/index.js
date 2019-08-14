@@ -37,6 +37,7 @@ class ViewBook extends Component{
         type:"readingThoughts/fetchBookThoughts",
         payload:{
           id:opt.props.value,
+          item:this.props.location.query.payload,
         }
       })
     }
@@ -49,7 +50,7 @@ class ViewBook extends Component{
   };
 
   goBackToIndex=()=>{
-    router.goBack()
+    router.push("/")
   };
 
   render(){

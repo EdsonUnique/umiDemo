@@ -139,7 +139,7 @@ export default {
           if(null===sessionStorage.getItem(GlobalEnum.sessionUserKey)){
 
             history.location.pathname="/Login";
-            history.location.query=null;
+            history.location.query=query;
            dispatch({
              type:"goLogin",
              payload:null,

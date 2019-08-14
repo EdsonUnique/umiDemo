@@ -17,8 +17,8 @@ class ReadingThoughtsWrapper extends Component{
     };
   };
 
-  handleEmptyThoughts=myShelf=>{
-    if(myShelf!=undefined && myShelf.length<=0){
+  handleEmptyThoughts=bookReadingThoughtsList=>{
+    if(bookReadingThoughtsList!=undefined && bookReadingThoughtsList.length<=0){
       return (
         <div align={"center"}>
           <WhiteSpace/>
@@ -37,20 +37,23 @@ class ReadingThoughtsWrapper extends Component{
     const {
         readingThoughts:{
           bookReadingThoughtsList,
-      }
+      },
     }=this.props;
+    const bookItem=this.props.location.query.payload;
 
     return (
         <div>
           <NavBar
             mode="dark"
             leftContent="返回"
-            onLeftClick={()=>{router.goBack()}}
-            rightContent={[
-
-            ]}
+            onLeftClick={()=>{router.push({
+              pathname:"/ViewBook",
+              query:{
+                payload:bookItem,
+              }
+            })}}
             rightContent={[<div>我的评论</div>]}
-          >书评</NavBar>
+          >《{bookItem.bookName}》书评</NavBar>
 
           {
             this.handleEmptyThoughts(bookReadingThoughtsList)
@@ -60,7 +63,7 @@ class ReadingThoughtsWrapper extends Component{
             bookReadingThoughtsList!=undefined && bookReadingThoughtsList.length>0 && bookReadingThoughtsList.map(item=>{
 
               return(
-                <Card>
+                <Card key={item.id}>
                   <Card.Header
                     title={item.nickname}
                     thumb="https://gw.alipayobjects.com/zos/rmsportal/MRhHctKOineMbKAZslML.jpg"

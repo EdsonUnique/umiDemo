@@ -2,31 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="151e87da-6e47-44b6-b5f8-148d8780a536" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/assets/imgs/button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/ReadingThoughts/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/ReadingThoughts/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/ReadingThoughts/models/readingThoughts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/book/server/controller/UserBookThoughtsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/book/server/model/UserBookThoughtsModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/book/server/modelMapper/UserBookThoughtsModelMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/book/server/modelMapper/UserBookThoughtsModelMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/book/server/service/UserBookThoughtsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/book/server/service/impl/UserBookThoughtsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/书籍评论.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/我的书架.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/我的浏览.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/查看书评.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/注册.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/用户中心.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/登录.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/阅读书籍.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/layouts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/models/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/models/book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/ReadingThoughts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ReadingThoughts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/ReadingThoughts/models/readingThoughts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ReadingThoughts/models/readingThoughts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/ViewBook/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ViewBook/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/services/bookApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/bookApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/book/server/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/book/server/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/book/server/entity/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/book/server/entity/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/book/server/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/book/server/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/book/server/entity/UserFocusBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/book/server/entity/UserFocusBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/book/server/entity/UserViewBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/book/server/entity/UserViewBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/book/server/entityMapper/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/book/server/entityMapper/BookMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/book/server/entityMapper/TagMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/book/server/entityMapper/TagMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/book/server/entityMapper/UserFocusBookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/book/server/entityMapper/UserFocusBookMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/book/server/entityMapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/book/server/entityMapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/book/server/entityMapper/UserViewBookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/book/server/entityMapper/UserViewBookMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/1.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/images/首页.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/book/security/FilterCORS.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/book/security/FilterCORS.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/server/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,114 +47,60 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/service/impl/UserViewBookImpl.java">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/book/security/FilterCORS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+            <state relative-caret-position="36">
+              <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/book/utils/EntityGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/entity/UserBookThoughts.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/controller/UserBookThoughtsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/images/首页.JPG">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/model/UserBookThoughtsModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/images/书籍评论.JPG">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/service/UserBookThoughtsService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/images/我的书架.JPG">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/service/impl/UserBookThoughtsServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/images/我的浏览.JPG">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/modelMapper/UserBookThoughtsModelMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="49" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/images/查看书评.JPG">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/modelMapper/UserBookThoughtsModelMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/images/注册.JPG">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/modelMapper/TagModelMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="9" selection-end-line="5" selection-end-column="9" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/images/用户中心.JPG">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/登录.JPG">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/阅读书籍.JPG">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -170,8 +108,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -217,7 +155,6 @@
         <option value="$PROJECT_DIR$/server/src/main/java/book/server/controller/UserController.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/book/server/controller/UserFocusBookController.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/book/server/service/UserFocusBookService.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/book/security/FilterCORS.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/book/server/model/UserModel.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/book/server/controller/UserViewBookController.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/book/server/service/UserViewBookService.java" />
@@ -229,14 +166,16 @@
         <option value="$PROJECT_DIR$/server/src/main/java/book/server/modelMapper/BookModelMapper.xml" />
         <option value="$PROJECT_DIR$/server/src/main/java/book/server/service/impl/UserViewBookImpl.java" />
         <option value="$PROJECT_DIR$/server/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/server/src/main/java/book/server/controller/UserBookThoughts.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/book/server/model/UserBookThoughtsModel.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/book/server/controller/UserBookThoughtsController.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/book/server/service/UserBookThoughtsService.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/book/server/modelMapper/UserBookThoughtsModelMapper.java" />
-        <option value="$PROJECT_DIR$/server/src/main/java/book/server/service/impl/UserBookThoughtsServiceImpl.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/book/server/modelMapper/UserBookThoughtsModelMapper.xml" />
+        <option value="$PROJECT_DIR$/server/src/main/java/book/server/service/impl/UserBookThoughtsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/server/src/test/java/ImageToCharacter.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/server/src/main/java/book/security/FilterCORS.java" />
       </list>
     </option>
   </component>
@@ -247,7 +186,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-45" />
     <option name="y" value="136" />
     <option name="width" value="1346" />
@@ -273,6 +212,11 @@
             <path>
               <item name="umiDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="umiDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="umiDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="umiDemo" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -313,39 +257,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="book" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="umiDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="umiDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="book" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="umiDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="umiDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="book" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modelMapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="umiDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="umiDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="book" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -362,7 +274,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tj-technology-portal" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -382,6 +294,7 @@
       <recent name="book.core" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Repository\umiDemo\images" />
       <recent name="F:\Repository\umiDemo\server\src\main\java\book\server\modelMapper" />
       <recent name="F:\Repository\umiDemo\server\src\main\java\book\core" />
     </key>
@@ -412,6 +325,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ImageToCharacter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ImageToCharacter" />
+      <module name="server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="book.ServerApplication" />
@@ -424,10 +344,12 @@
     </configuration>
     <list>
       <item itemvalue="Application.EntityGenerator" />
+      <item itemvalue="Application.ImageToCharacter" />
       <item itemvalue="Spring Boot.ServerApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ImageToCharacter" />
         <item itemvalue="Application.EntityGenerator" />
       </list>
     </recent_temporary>
@@ -453,18 +375,21 @@
       <workItem from="1564966217779" duration="9922000" />
       <workItem from="1565052920929" duration="1654000" />
       <workItem from="1565080042033" duration="857000" />
-      <workItem from="1565138931818" duration="9829000" />
+      <workItem from="1565138931818" duration="9833000" />
+      <workItem from="1565225820959" duration="2985000" />
+      <workItem from="1565570248020" duration="1578000" />
+      <workItem from="1565574500276" duration="139000" />
+      <workItem from="1565769788706" duration="1416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100066000" />
+    <option name="totallyTimeSpent" value="106188000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25906345" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27416918" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -474,13 +399,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42996743" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.50325733" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1921824" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.50325733" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32899022" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5358306" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.36807817" />
@@ -537,85 +462,19 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/server/src/main/java/book/server/service/impl/UserFocusBookServiceImpl.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/model/TagModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/service/TagService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/entityMapper/UserFocusBookMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/entityMapper/UserFocusBookMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/core/RestMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/modelMapper/UserModelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/modelMapper/UserMOdelMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/GlobalEnum.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/security/HandlerException.java" />
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/core/RestWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/exceptions/MyException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/entityMapper/BookMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -650,16 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/service/impl/UserFocusBookServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-141">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/service/UserFocusBookService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -684,16 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/security/FilterCORS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="21" column="80" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -737,28 +576,6 @@
           <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/service/BookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/service/impl/BookServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -824,16 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="792">
-            <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/controller/BookController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -866,7 +673,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/service/impl/UserViewBookImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="836">
           <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -876,7 +683,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/book/utils/EntityGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
+        <state relative-caret-position="220">
           <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -886,41 +693,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/entity/UserBookThoughts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
+        <state relative-caret-position="616">
           <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/modelMapper/TagModelMapper.xml">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/model/UserBookThoughtsModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/modelMapper/UserBookThoughtsModelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="49" />
+        <state relative-caret-position="132">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/service/impl/UserBookThoughtsServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/controller/UserBookThoughtsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
+        <state relative-caret-position="682">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/test/java/ImageToCharacter.java" />
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/service/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/service/TagService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/service/impl/BookServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/service/UserBookThoughtsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="176">
           <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -928,10 +761,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/model/UserBookThoughtsModel.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/service/impl/UserFocusBookServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="550">
+          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/modelMapper/UserBookThoughtsModelMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -945,15 +788,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/controller/UserBookThoughtsController.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/modelMapper/TagModelMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="110">
+          <caret line="5" column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/server/service/impl/UserBookThoughtsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-110">
+            <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/book/security/FilterCORS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/2.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/3.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/书籍评论.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/我的书架.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/我的浏览.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/查看书评.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/注册.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/用户中心.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/登录.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/阅读书籍.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/首页.JPG">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
   <component name="masterDetails">
