@@ -2,12 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b364e95a-5025-4357-ba3f-ffa2dc37717a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../client-admin/src/assets/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client-admin/src/assets/MyLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client-admin/src/assets/MyLogo3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client-admin/src/pages/manageBook/addBook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client-admin/src/pages/manageBook/viewBooks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ReadingThoughts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ReadingThoughts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ReadingThoughts/models/readingThoughts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ReadingThoughts/models/readingThoughts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ViewBook/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ViewBook/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/umiDemo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.prettierignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/.umirc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/mock/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/imgs/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/assets/yay.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/BookItem/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/BookItem/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Condition/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Condition/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/FooterNav/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/FooterNav/style.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/ReadingThoughts/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Search/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Search/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/global.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/layouts/BasicLayout/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/layouts/BasicLayout/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/layouts/FullScreenLayout/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/layouts/FullScreenLayout/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/layouts/__tests__/index.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/layouts/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/models/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/models/book.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/models/global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/models/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Login/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Login/login.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/MyViews/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/MyViews/models/myViews.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/ReadingThoughts/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/ReadingThoughts/models/readingThoughts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Register/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/Shelf/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/ViewBook/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/ViewBook/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/ViewBook/models/viewBook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/__tests__/index.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/index/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/index/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/userCenter/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/userCenter/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/pages/userCenter/models/userCenter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/services/bookApi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/services/userApi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/services/userCenterApi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/utils/GlobalEnum.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/utils/request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/utils/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/utils/utils.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/webpack.config.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +89,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/BookItem/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="456">
               <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
@@ -35,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/services/bookApi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
+            <state relative-caret-position="696">
               <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -47,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/ViewBook/models/viewBook.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="192">
               <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
@@ -56,13 +122,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/ViewBook/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="90" column="14" lean-forward="true" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="14" />
+            <state relative-caret-position="2064">
+              <caret line="86" column="20" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/layouts/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,7 +149,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/ReadingThoughts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
+            <state relative-caret-position="1320">
               <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -83,7 +161,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/index/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1128">
+            <state relative-caret-position="1272">
               <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -104,7 +182,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/ReadingThoughts/models/readingThoughts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
+            <state relative-caret-position="960">
               <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
@@ -116,7 +194,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/Shelf/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1032">
+            <state relative-caret-position="1152">
               <caret line="48" column="4" selection-start-line="37" selection-start-column="1" selection-end-line="48" selection-end-column="4" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -196,7 +274,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-222" />
     <option name="y" value="50" />
     <option name="width" value="1054" />
@@ -210,102 +288,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="client-mobile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client-mobile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="client-mobile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client-mobile" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="ReadingThoughts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="ReadingThoughts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="ReadingThoughts" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="ViewBook" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="ViewBook" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -314,7 +313,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../deduct-goods-managerment/deduct-goods-managerment-mobile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -385,16 +384,19 @@
       <workItem from="1565138137029" duration="13726000" />
       <workItem from="1565225718374" duration="3624000" />
       <workItem from="1565762334978" duration="172000" />
+      <workItem from="1566199819742" duration="847000" />
+      <workItem from="1566526781461" duration="663000" />
+      <workItem from="1566534691417" duration="619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179814000" />
+    <option name="totallyTimeSpent" value="181943000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21891288" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21891288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -412,7 +414,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.09240924" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.09210526" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -687,16 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/Register/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -739,7 +731,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/BookItem/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="456">
           <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
@@ -749,7 +741,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/services/bookApi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
+        <state relative-caret-position="696">
           <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
@@ -759,7 +751,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/ViewBook/models/viewBook.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="192">
           <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
@@ -767,9 +759,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/ViewBook/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2064">
+          <caret line="86" column="20" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/ReadingThoughts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
+        <state relative-caret-position="1320">
           <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
@@ -779,7 +781,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/index/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1128">
+        <state relative-caret-position="1272">
           <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -796,7 +798,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/ReadingThoughts/models/readingThoughts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
+        <state relative-caret-position="960">
           <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
@@ -806,7 +808,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/Shelf/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
+        <state relative-caret-position="1152">
           <caret line="48" column="4" selection-start-line="37" selection-start-column="1" selection-end-line="48" selection-end-column="4" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
@@ -814,12 +816,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/ViewBook/index.js">
+    <entry file="file://$PROJECT_DIR$/src/layouts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="90" column="14" lean-forward="true" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="14" />
+        <state relative-caret-position="168">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
