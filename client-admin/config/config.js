@@ -116,19 +116,19 @@ export default {
             {
               path: '/manageBook',
               name: '图书管理',
-              icon: 'smile',
+              icon: 'bars',
               routes: [
                 {
                   path: '/manageBook/viewBooks',
                   name: '查看所有书籍',
-                  icon: 'smile',
+                  icon: 'eye',
                   component: './manageBook/viewBooks',
                   exact: true,
                 },
                 {
                   path: '/manageBook/addBook',
                   name: '添加书籍',
-                  icon: 'smile',
+                  icon: 'form',
                   component: './manageBook/addBook',
                   exact: true,
                 },
