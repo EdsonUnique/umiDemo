@@ -2,10 +2,8 @@ package book.server.controller;
 
 import book.core.RestVO;
 import book.core.RestWrapper;
-import book.exceptions.MyException;
 import book.server.constants.GlobalConstant;
 import book.server.entity.User;
-import book.server.entity.UserFocusBook;
 import book.server.model.UserModel;
 import book.server.service.UserService;
 import org.springframework.beans.BeanUtils;

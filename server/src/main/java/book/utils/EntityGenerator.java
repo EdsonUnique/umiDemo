@@ -21,7 +21,7 @@ public class EntityGenerator {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
-        gc.setOutputDir(projectPath + "/server/src/main/java");
+        gc.setOutputDir(projectPath + "/src/main/java");
         gc.setAuthor("Edson");
         gc.setOpen(false);
         gc.setFileOverride(true);
@@ -38,7 +38,7 @@ public class EntityGenerator {
 
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setParent("book.server");
+        pc.setParent("book.serverAdmin");
         pc.setEntity("entity");
         pc.setXml("entityMapper");
         pc.setMapper("entityMapper");
@@ -56,7 +56,7 @@ public class EntityGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输入文件名称
-                return projectPath + "/server/src/main/java/book/server/entityMapper"
+                return projectPath + "/src/main/java/book/serverAdmin/entityMapper"
                         + "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
             }
         });

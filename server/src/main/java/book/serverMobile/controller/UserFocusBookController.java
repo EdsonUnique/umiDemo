@@ -2,11 +2,9 @@ package book.server.controller;
 
 import book.core.RestVO;
 import book.core.RestWrapper;
-import book.exceptions.MyException;
 import book.server.constants.GlobalConstant;
 import book.server.entity.User;
 import book.server.entity.UserFocusBook;
-import book.server.model.BookModel;
 import book.server.service.UserFocusBookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpSession;
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/book")

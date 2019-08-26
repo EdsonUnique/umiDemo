@@ -2,7 +2,6 @@ package book.server.service.impl;
 
 import book.server.entity.Tag;
 import book.server.entityMapper.TagMapper;
-import book.server.model.TagModel;
 import book.server.service.TagService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

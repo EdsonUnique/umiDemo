@@ -4,7 +4,6 @@ import book.exceptions.MyException;
 import book.server.entity.UserViewBook;
 import book.server.entityMapper.UserViewBookMapper;
 import book.server.service.UserViewBookService;
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -7,7 +7,6 @@ import book.server.constants.GlobalConstant;
 import book.server.entity.Tag;
 import book.server.entity.User;
 import book.server.model.BookModel;
-import book.server.model.TagModel;
 import book.server.service.BookService;
 import book.server.service.TagService;
 import org.springframework.beans.factory.annotation.Autowired;
