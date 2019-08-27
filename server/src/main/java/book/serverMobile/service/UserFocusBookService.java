@@ -1,7 +1,7 @@
-package book.server.service;
+package book.serverMobile.service;
 
 import book.exceptions.MyException;
-import book.server.entity.UserFocusBook;
+import book.entity.UserFocusBook;
 import org.springframework.stereotype.Service;
 
 @Service

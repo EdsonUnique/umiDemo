@@ -1,11 +1,11 @@
-package book.server.service.impl;
+package book.serverMobile.service.impl;
 
 import book.exceptions.MyException;
-import book.server.constants.GlobalConstant;
-import book.server.entity.User;
-import book.server.entityMapper.UserMapper;
-import book.server.model.UserModel;
-import book.server.service.UserService;
+import book.serverMobile.constants.GlobalConstant;
+import book.entity.User;
+import book.entityMapper.UserMapper;
+import book.serverMobile.model.UserModel;
+import book.serverMobile.service.UserService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import org.springframework.beans.BeanUtils;

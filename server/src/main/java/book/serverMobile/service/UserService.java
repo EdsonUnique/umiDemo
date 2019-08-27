@@ -1,8 +1,8 @@
-package book.server.service;
+package book.serverMobile.service;
 
 import book.exceptions.MyException;
-import book.server.entity.User;
-import book.server.model.UserModel;
+import book.entity.User;
+import book.serverMobile.model.UserModel;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -1,8 +1,8 @@
-package book.server.service.impl;
+package book.serverMobile.service.impl;
 
-import book.server.model.BookModel;
-import book.server.modelMapper.BookModelMapper;
-import book.server.service.BookService;
+import book.serverMobile.model.BookModel;
+import book.serverMobile.modelMapper.BookModelMapper;
+import book.serverMobile.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

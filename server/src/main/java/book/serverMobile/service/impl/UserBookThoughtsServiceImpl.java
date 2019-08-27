@@ -1,11 +1,11 @@
-package book.server.service.impl;
+package book.serverMobile.service.impl;
 
 import book.exceptions.MyException;
-import book.server.entity.UserBookThoughts;
-import book.server.entityMapper.UserBookThoughtsMapper;
-import book.server.model.UserBookThoughtsModel;
-import book.server.modelMapper.UserBookThoughtsModelMapper;
-import book.server.service.UserBookThoughtsService;
+import book.entity.UserBookThoughts;
+import book.entityMapper.UserBookThoughtsMapper;
+import book.serverMobile.model.UserBookThoughtsModel;
+import book.serverMobile.modelMapper.UserBookThoughtsModelMapper;
+import book.serverMobile.service.UserBookThoughtsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

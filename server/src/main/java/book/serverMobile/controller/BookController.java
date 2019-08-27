@@ -1,14 +1,14 @@
-package book.server.controller;
+package book.serverMobile.controller;
 
 
 import book.core.RestVO;
 import book.core.RestWrapper;
-import book.server.constants.GlobalConstant;
-import book.server.entity.Tag;
-import book.server.entity.User;
-import book.server.model.BookModel;
-import book.server.service.BookService;
-import book.server.service.TagService;
+import book.serverMobile.constants.GlobalConstant;
+import book.entity.Tag;
+import book.entity.User;
+import book.serverMobile.model.BookModel;
+import book.serverMobile.service.BookService;
+import book.serverMobile.service.TagService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

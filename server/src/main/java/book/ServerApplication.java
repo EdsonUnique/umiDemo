@@ -8,8 +8,10 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 @SpringBootApplication
 @ServletComponentScan
 @MapperScan({
-        "book.server.modelMapper",
-        "book.server.entityMapper"
+        "book.serverMobile.modelMapper",
+        "book.entityMapper",
+        "book.serverAdmin.modelMapper",
+        "book.serverAdmin.entityMapper"
 })
 public class ServerApplication {
 

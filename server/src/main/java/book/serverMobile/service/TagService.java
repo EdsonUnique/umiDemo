@@ -1,6 +1,6 @@
-package book.server.service;
+package book.serverMobile.service;
 
-import book.server.entity.Tag;
+import book.entity.Tag;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

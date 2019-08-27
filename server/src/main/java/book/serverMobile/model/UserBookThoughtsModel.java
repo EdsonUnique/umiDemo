@@ -1,6 +1,6 @@
-package book.server.model;
+package book.serverMobile.model;
 
-import book.server.entity.UserBookThoughts;
+import book.entity.UserBookThoughts;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,6 +1,6 @@
-package book.server.modelMapper;
+package book.serverMobile.modelMapper;
 
-import book.server.model.UserBookThoughtsModel;
+import book.serverMobile.model.UserBookThoughtsModel;
 
 import java.util.List;
 

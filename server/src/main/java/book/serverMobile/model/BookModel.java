@@ -1,6 +1,6 @@
-package book.server.model;
+package book.serverMobile.model;
 
-import book.server.entity.Book;
+import book.entity.Book;
 import lombok.Data;
 
 import java.time.LocalDateTime;

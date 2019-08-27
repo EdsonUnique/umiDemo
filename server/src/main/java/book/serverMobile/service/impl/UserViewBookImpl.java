@@ -1,9 +1,9 @@
-package book.server.service.impl;
+package book.serverMobile.service.impl;
 
 import book.exceptions.MyException;
-import book.server.entity.UserViewBook;
-import book.server.entityMapper.UserViewBookMapper;
-import book.server.service.UserViewBookService;
+import book.entity.UserViewBook;
+import book.entityMapper.UserViewBookMapper;
+import book.serverMobile.service.UserViewBookService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import org.springframework.beans.factory.annotation.Autowired;

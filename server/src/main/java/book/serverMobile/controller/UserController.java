@@ -1,11 +1,11 @@
-package book.server.controller;
+package book.serverMobile.controller;
 
 import book.core.RestVO;
 import book.core.RestWrapper;
-import book.server.constants.GlobalConstant;
-import book.server.entity.User;
-import book.server.model.UserModel;
-import book.server.service.UserService;
+import book.serverMobile.constants.GlobalConstant;
+import book.entity.User;
+import book.serverMobile.model.UserModel;
+import book.serverMobile.service.UserService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

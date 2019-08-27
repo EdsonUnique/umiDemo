@@ -1,10 +1,10 @@
-package book.server.controller;
+package book.serverMobile.controller;
 
 import book.core.RestVO;
 import book.core.RestWrapper;
-import book.server.constants.GlobalConstant;
-import book.server.entity.User;
-import book.server.service.UserViewBookService;
+import book.serverMobile.constants.GlobalConstant;
+import book.entity.User;
+import book.serverMobile.service.UserViewBookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

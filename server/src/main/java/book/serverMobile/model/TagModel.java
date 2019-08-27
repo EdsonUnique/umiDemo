@@ -1,6 +1,6 @@
-package book.server.model;
+package book.serverMobile.model;
 
-import book.server.entity.Tag;
+import book.entity.Tag;
 
 public class TagModel extends Tag {
 }

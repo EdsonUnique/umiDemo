@@ -1,4 +1,4 @@
-package book.server.constants;
+package book.serverMobile.constants;
 
 public class GlobalConstant {
 

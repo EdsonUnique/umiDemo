@@ -1,10 +1,10 @@
-package book.server.service.impl;
+package book.serverMobile.service.impl;
 
 
 import book.exceptions.MyException;
-import book.server.entity.UserFocusBook;
-import book.server.entityMapper.UserFocusBookMapper;
-import book.server.service.UserFocusBookService;
+import book.entity.UserFocusBook;
+import book.entityMapper.UserFocusBookMapper;
+import book.serverMobile.service.UserFocusBookService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import org.springframework.beans.factory.annotation.Autowired;

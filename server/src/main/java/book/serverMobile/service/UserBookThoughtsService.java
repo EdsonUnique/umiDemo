@@ -1,8 +1,8 @@
-package book.server.service;
+package book.serverMobile.service;
 
 import book.exceptions.MyException;
-import book.server.entity.UserBookThoughts;
-import book.server.model.UserBookThoughtsModel;
+import book.entity.UserBookThoughts;
+import book.serverMobile.model.UserBookThoughtsModel;
 
 import java.util.List;
 
