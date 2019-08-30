@@ -25,8 +25,6 @@ class IndexPage extends Component{
     })
   }
 
-
-
   render(){
 
     const {

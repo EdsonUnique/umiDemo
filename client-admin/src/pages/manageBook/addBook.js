@@ -13,12 +13,15 @@ import {
   Button,
   AutoComplete, Upload,
 } from 'antd';
-
+import { connect } from "dva";
 
 const { Option } = Select;
 const AutoCompleteOption = AutoComplete.Option;
 const {TextArea}=Input;
 
+@connect(({book})=>({
+  book,
+}))
 class AddBook extends Component {
 
   state = {
@@ -28,15 +31,24 @@ class AddBook extends Component {
   handleSubmit = e => {
     e.preventDefault();
     this.props.form.validateFieldsAndScroll((err, values) => {
+
+      const {dispatch}=this.props;
+
       if (!err) {
         console.log('Received values of form: ', values);
+
+        dispatch({
+          type:'book/addBook',
+          payload:values,
+        })
+
       }
     });
   };
 
   handleReset=()=>{
     this.props.form.resetFields();
-  }
+  };
 
   render() {
 
@@ -68,7 +80,7 @@ class AddBook extends Component {
     return (
       <PageHeaderWrapper>
         <div>
-          <Form {...formItemLayout} onSubmit={this.handleSubmit} onReset={this.handleReset}>
+          <Form {...formItemLayout}  method={"post"} onSubmit={this.handleSubmit} onReset={this.handleReset} encType='multipart/form-data'>
             <Form.Item label="书名">
               {getFieldDecorator('bookName', {
                 rules: [
@@ -131,7 +143,7 @@ class AddBook extends Component {
             </Form.Item>
 
             <Form.Item label="文本上传">
-              {getFieldDecorator('content', {
+              {getFieldDecorator('file', {
                 rules: [{ required: true, message: '文本不能为空!' }],
               })(
 

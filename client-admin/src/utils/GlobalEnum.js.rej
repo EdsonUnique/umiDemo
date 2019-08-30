@@ -1,0 +1,4 @@
+diff a/src/utils/GlobalEnum.js b/src/utils/GlobalEnum.js	(rejected hunks)
+@@ -5 +5 @@ const GlobalEnum={
+-  location:"http://localhost:10008/api",
++  location: 'http://localhost:10008/api',

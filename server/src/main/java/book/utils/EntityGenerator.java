@@ -29,16 +29,16 @@ public class EntityGenerator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3308/BookApp?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT");
+        dsc.setUrl("jdbc:mysql://192.168.192.128:3306/bookapp?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT");
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.jdbc.Driver");
-        dsc.setUsername("root");
-        dsc.setPassword("147258369");
+        dsc.setUsername("edson");
+        dsc.setPassword("Edson@123");
         mpg.setDataSource(dsc);
 
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setParent("book.serverAdmin");
+        pc.setParent("book");
         pc.setEntity("entity");
         pc.setXml("entityMapper");
         pc.setMapper("entityMapper");
@@ -56,7 +56,7 @@ public class EntityGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输入文件名称
-                return projectPath + "/src/main/java/book/serverAdmin/entityMapper"
+                return projectPath + "/src/main/java/book/entityMapper"
                         + "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
             }
         });

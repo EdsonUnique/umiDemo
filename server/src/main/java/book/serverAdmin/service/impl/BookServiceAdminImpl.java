@@ -1,14 +1,13 @@
 package book.serverAdmin.service.impl;
 
-import book.serverAdmin.model.BookModel;
+import book.serverAdmin.model.BookAdminModel;
 import book.serverAdmin.modelMapper.BookModelAdminMapper;
 import book.serverAdmin.service.BookServiceAdmin;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class BookServiceAdminImpl implements BookServiceAdmin {
@@ -17,10 +16,12 @@ public class BookServiceAdminImpl implements BookServiceAdmin {
     private BookModelAdminMapper bookModelMapper;
 
     @Override
-    public Page<BookModel> fetchBookModelList(int pagenum,int pagesize) {
+    public PageInfo<BookAdminModel> fetchBookModelList(int pagenum, int pagesize) {
 
-        PageHelper.startPage(pagenum,pagesize);
-        List<BookModel> pages=bookModelMapper.fetchBookModelList();
-        return (Page<BookModel>)pages;
+//        PageHelper.startPage(pagenum,pagesize);
+//        Page<BookAdminModel> pages=bookModelMapper.fetchBookModelList();
+        Page<BookAdminModel> pages = PageHelper.startPage(pagenum, pagesize).doSelectPage(()-> bookModelMapper.fetchBookModelList());
+
+        return pages.toPageInfo();
     }
 }

@@ -1,12 +1,10 @@
 package book.serverAdmin.modelMapper;
 
-import book.serverAdmin.model.BookModel;
+import book.serverAdmin.model.BookAdminModel;
 import com.github.pagehelper.Page;
-
-import java.util.List;
 
 public interface BookModelAdminMapper {
 
-    List<BookModel> fetchBookModelList();
+    Page<BookAdminModel> fetchBookModelList();
 
 }

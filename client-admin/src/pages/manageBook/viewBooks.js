@@ -1,16 +1,51 @@
 import React, { Component } from 'react';
 import { PageHeaderWrapper } from '@ant-design/pro-layout/lib/index';
-import {Table} from 'antd';
+import {Pagination, Table} from 'antd';
 import styles from './style.less';
+import { connect } from 'dva';
+import GlobalEnum from "../../utils/GlobalEnum";
 
+@connect(({ book }) => ({
+  book,
+}))
 class ViewBooks extends Component {
+  constructor(props){
+    super(props);
 
+  }
 
-  handleChangePage=(pagenum,pagesize)=>{
-    alert(pagenum);
+  componentDidMount() {
+
+    const { dispatch } = this.props;
+
+    dispatch({
+      type: 'book/fetchBookList',
+      payload: {
+        pagenum: 0,
+        pagesize: GlobalEnum.pagesize,
+      },
+    })
+  }
+
+  handleChangePage=(pagenum, pagesize) => {
+    const { dispatch } = this.props;
+
+    dispatch({
+      type: 'book/fetchBookList',
+      payload: {
+        pagenum: pagenum,
+        pagesize: GlobalEnum.pagesize,
+      },
+    })
   };
 
   render() {
+    const {
+      book:{
+        bookList,
+        pageInfo,
+      },
+    }=this.props;
 
     const columns=[
       {
@@ -44,12 +79,18 @@ class ViewBooks extends Component {
         title: '简介',
         dataIndex: 'description',
         key: 'description',
+        render:(text)=>{
+          return (text!==undefined && text!==null && text.length>6)?text.substr(0,6)+"...":text;
+        }
 
       },
       {
         title: '文本内容',
         dataIndex: 'content',
         key: 'content',
+        render:(text)=>{
+          return (text!==undefined && text!==null && text.length>6)?text.substr(0,6)+"...":text;
+        }
 
       },
       {
@@ -61,20 +102,10 @@ class ViewBooks extends Component {
       },
     ];
 
-    const data=[
-      {
-        key:1,
-        bookName:'shuhd',
-      },
-      {
-        key:2,
-        bookName:'shuews23hd',
-      },
-    ];
-
     const pagination={
-      total:100,
-      defaultPageSize:10,
+      total:pageInfo.total,
+      defaultCurrent:pageInfo.pagenum,
+      pageSize:GlobalEnum.pagesize,
       onChange:(pagenum,pagesize)=>this.handleChangePage(pagenum,pagesize),
     };
 
@@ -82,7 +113,7 @@ class ViewBooks extends Component {
 
     return (
       <PageHeaderWrapper>
-        <Table className={styles.ETable} bordered={true} columns={columns} dataSource={data} pagination={pagination}/>
+        <Table className={styles.ETable} bordered={true} columns={columns} dataSource={bookList} pagination={pagination}/>
       </PageHeaderWrapper>
     );
   }

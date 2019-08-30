@@ -1,5 +1,6 @@
 package book.entity;
 
+import java.time.LocalDate;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -14,7 +15,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author Edson
- * @since 2019-08-07
+ * @since 2019-08-30
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -36,7 +37,7 @@ public class Book implements Serializable {
     private String publisher;
 
     @TableField("publish_date")
-    private LocalDateTime publishDate;
+    private LocalDate publishDate;
 
     @TableField("description")
     private String description;
@@ -52,6 +53,12 @@ public class Book implements Serializable {
 
     @TableField("update_time")
     private LocalDateTime updateTime;
+
+    /**
+     * 文件路径
+     */
+    @TableField("filePath")
+    private String filePath;
 
 
 }

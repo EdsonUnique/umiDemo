@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="book.serverAdmin.modelMapper.BookModelAdminMapper">
 
-    <select id="fetchBookModelList" resultType="book.serverAdmin.model.BookModel">
+    <select id="fetchBookModelList" resultType="book.serverAdmin.model.BookAdminModel">
         select book.*,tag.name as tagName
         from book
                  left join tag on book.tag_id=tag.id
