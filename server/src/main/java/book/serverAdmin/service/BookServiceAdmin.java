@@ -9,4 +9,6 @@ public interface BookServiceAdmin {
 
     PageInfo<BookAdminModel> fetchBookModelList(int pagenum, int pagesize);
 
+    void addBook(BookAdminModel bookAdminModel) throws Exception;
+
 }

@@ -13,12 +13,9 @@ export async function addBook(params) {
     body:{
       ...params,
     },
-    headers:{
-      'Content-Type':'multipart/form-data',
-    },
   });
 }
 
-export async function getFakeCaptcha(mobile) {
-  return request(`/api/login/captcha?mobile=${mobile}`);
+export async function fetchTags() {
+  return request(GlobalEnum.location+'/admin/common/fetchTags');
 }

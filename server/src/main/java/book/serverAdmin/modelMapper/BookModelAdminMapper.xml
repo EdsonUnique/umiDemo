@@ -6,6 +6,7 @@
         select book.*,tag.name as tagName
         from book
                  left join tag on book.tag_id=tag.id
+        order by create_time desc
 
     </select>
 

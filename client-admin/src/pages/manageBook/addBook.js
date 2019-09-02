@@ -3,30 +3,60 @@ import { PageHeaderWrapper } from '@ant-design/pro-layout/lib/index';
 import {
   Form,
   Input,
-  Tooltip,
   Icon,
-  Cascader,
   Select,
-  Row,
-  Col,
-  Checkbox,
+  message,
   Button,
   AutoComplete, Upload,
 } from 'antd';
 import { connect } from "dva";
+import GlobalEnum from "../../utils/GlobalEnum";
 
 const { Option } = Select;
 const AutoCompleteOption = AutoComplete.Option;
 const {TextArea}=Input;
+const props = {
+  name: 'fileBook',
+  action: 'http://localhost:10008/admin/book/uploadBook',
+  // headers: {
+  //   authorization: 'authorization-text',
+  // },
+  onChange(info) {
+
+   if (info.file.status==="done") {
+      if(info.file.response.code>0){
+        message.success(`${info.file.name} 文件上传成功`);
+      }else{
+        message.error(`${info.file.name} 文件上传失败`);
+      }
+
+    }
+  },
+};
 
 @connect(({book})=>({
   book,
 }))
 class AddBook extends Component {
 
-  state = {
+  constructor(props){
+    super(props);
+    this.state={
 
-  };
+    };
+  }
+
+  componentDidMount() {
+    //加载分类标签
+    const {dispatch}=this.props;
+
+    dispatch({
+
+      type:'book/fetchTags',
+
+    });
+
+  }
 
   handleSubmit = e => {
     e.preventDefault();
@@ -35,12 +65,12 @@ class AddBook extends Component {
       const {dispatch}=this.props;
 
       if (!err) {
-        console.log('Received values of form: ', values);
+
 
         dispatch({
           type:'book/addBook',
           payload:values,
-        })
+        });
 
       }
     });
@@ -53,6 +83,11 @@ class AddBook extends Component {
   render() {
 
     const { getFieldDecorator } = this.props.form;
+    const {
+      book:{
+        tags,
+      }
+    }=this.props;
 
     const formItemLayout = {
       labelCol: {
@@ -130,24 +165,28 @@ class AddBook extends Component {
             </Form.Item>
 
             <Form.Item label="标签">
-              {getFieldDecorator('tag', {
+              {getFieldDecorator('tagId', {
                 rules: [{ required: true, message: '标签不能为空!' }],
               })(
 
+                //tags!==undefined && tags.length>0
                 <Select>
-                  <option key={1}>现代文学</option>
-                  <option key={2}>古代文学</option>
-                  <option key={3}>外国文学</option>
+                  {
+                    tags!==undefined && tags.length>0 && tags.map((value,key)=>{
+
+                      return <Option key={key} value={value.id}>{value.name}</Option>
+                    })
+                  }
                 </Select>
               )}
             </Form.Item>
 
             <Form.Item label="文本上传">
-              {getFieldDecorator('file', {
+              {getFieldDecorator('fileBook', {
                 rules: [{ required: true, message: '文本不能为空!' }],
               })(
 
-                <Upload>
+                <Upload {...props}>
                   <Button>
                     <Icon type="upload" /> 点击上传
                   </Button>
@@ -173,3 +212,6 @@ class AddBook extends Component {
 }
 const AddBookForm = Form.create({ name: 'addBook' })(AddBook);
 export default AddBookForm;
+
+
+

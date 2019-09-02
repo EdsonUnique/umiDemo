@@ -18,7 +18,6 @@ public class BookAdminModel extends Book {
 
     private String tagName;
 
-    private MultipartFile file;
 
 
 

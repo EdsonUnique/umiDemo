@@ -1,11 +1,13 @@
-import {fetchBookList,addBook} from '@/services/bookApi'
-import {message} from 'antd'
+import {fetchBookList,addBook,fetchTags} from '@/services/bookApi'
+import {message} from 'antd';
+import router from 'umi/router';
 
 const BookModel = {
   namespace: 'book',
   state: {
     bookList: [],
     pageInfo:{},
+    tags:[],
   },
 
   effects: {
@@ -34,6 +36,25 @@ const BookModel = {
         return;
       }
 
+      message.success(response.msg);
+
+      router.push("/manageBook/viewBooks")
+
+    },
+
+    *fetchTags({payload},{call,put}){
+      const response=yield call(fetchTags)
+
+      if(response.code<=0){
+        message.error("加载失败");
+        return;
+      }
+
+      yield put({
+        type:'fetchTagsSuccess',
+         payload:response.data,
+      })
+
     }
 
   },
@@ -46,6 +67,13 @@ const BookModel = {
         bookList: payload.list,
         pageInfo:payload,
       };
+    },
+
+    fetchTagsSuccess(state,{payload}){
+       return {
+          ...state,
+          tags:payload,
+        };
     }
 
   },
