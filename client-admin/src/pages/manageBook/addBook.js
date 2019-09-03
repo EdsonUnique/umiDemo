@@ -10,7 +10,6 @@ import {
   AutoComplete, Upload,
 } from 'antd';
 import { connect } from "dva";
-import GlobalEnum from "../../utils/GlobalEnum";
 
 const { Option } = Select;
 const AutoCompleteOption = AutoComplete.Option;
@@ -33,6 +32,16 @@ const props = {
     }
   },
 };
+
+function beforeUpload(file) {
+  console.log(file.type)
+  const isRightFile = file.type === 'application/msword';
+  if (!isRightFile) {
+    message.error('请上传word类型文件!');
+  }
+
+  return isRightFile ;
+}
 
 @connect(({book})=>({
   book,
@@ -186,7 +195,11 @@ class AddBook extends Component {
                 rules: [{ required: true, message: '文本不能为空!' }],
               })(
 
-                <Upload {...props}>
+                <Upload {...props}
+                        accept=".doc,.docx"
+                        beforeUpload={beforeUpload}
+                        multiple="false"
+                >
                   <Button>
                     <Icon type="upload" /> 点击上传
                   </Button>

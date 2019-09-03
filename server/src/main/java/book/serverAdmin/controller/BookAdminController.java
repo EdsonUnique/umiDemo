@@ -1,21 +1,19 @@
 package book.serverAdmin.controller;
 
 
+import book.core.MyConfiguration;
 import book.core.RestVO;
 import book.core.RestWrapper;
 import book.serverAdmin.model.BookAdminModel;
 import book.serverAdmin.service.BookServiceAdmin;
-import book.utils.UploadFileToDisk;
+import book.utils.UploadFileUtils;
 import com.github.pagehelper.PageInfo;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
+import javax.servlet.http.HttpServletResponse;
+import java.net.URLDecoder;
 
 @RestController
 @RequestMapping("/admin/book")
@@ -23,6 +21,8 @@ public class BookAdminController {
 
     @Autowired
     private BookServiceAdmin bookServiceAdmin;
+    @Autowired
+    private MyConfiguration myConfiguration;
     /**
      * 文件上传路径
      */
@@ -56,7 +56,7 @@ public class BookAdminController {
 
         //存储到指定文件夹
         try{
-            filePath= UploadFileToDisk.writeToUploadFiles(file,"D://resources/upload");
+            filePath= UploadFileUtils.writeToUploadFiles(file,myConfiguration.uploadLocation);
         }catch (Exception e){
             e.printStackTrace();
             return RestWrapper.error(e.getMessage());
@@ -64,6 +64,20 @@ public class BookAdminController {
 
 
         return RestWrapper.success();
+    }
+
+    @GetMapping("/fetchBookFile")
+    public void fetchBookFile(@RequestParam("filePath")String filePath, HttpServletResponse response){
+        try{
+
+            filePath=URLDecoder.decode(filePath,"UTF-8");
+            UploadFileUtils.writeFileToClient(response,filePath);
+
+        }catch (Exception e){
+            e.printStackTrace();
+            //return RestWrapper.error(e.getMessage());
+        }
+        //return RestWrapper.success();
     }
 
 

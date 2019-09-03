@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { PageHeaderWrapper } from '@ant-design/pro-layout/lib/index';
-import {Pagination, Table} from 'antd';
+import {Button, Divider, Table} from 'antd';
 import styles from './style.less';
 import { connect } from 'dva';
 import GlobalEnum from "../../utils/GlobalEnum";
@@ -37,6 +37,13 @@ class ViewBooks extends Component {
         pagesize: GlobalEnum.pagesize,
       },
     })
+  };
+
+  handleFile=text=>{
+
+    window.open(GlobalEnum.location+`/admin/book/fetchBookFile?filePath=`+encodeURI(text),"_blank")
+
+
   };
 
   render() {
@@ -85,19 +92,31 @@ class ViewBooks extends Component {
 
       },
       {
-        title: '文本内容',
-        dataIndex: 'content',
-        key: 'content',
+        title: '文本阅读',
+        dataIndex: 'filePath',
+        key: 'filePath',
         render:(text)=>{
-          return (text!==undefined && text!==null && text.length>6)?text.substr(0,6)+"...":text;
+          return (
+            <div >
+              <Button type={"primary"} shape="round" icon="download" size={"small"} onClick={()=>this.handleFile(text)}>下载</Button>
+            </div>
+          )
         }
-
       },
       {
         title: '操作',
         dataIndex: 'operation',
         key: 'operation',
         colspan:'2',
+        render:()=>{
+          return (
+            <div>
+              <a >编辑</a>
+              <Divider type="vertical"/>
+              <a >删除</a>
+            </div>
+          )
+        }
 
       },
     ];

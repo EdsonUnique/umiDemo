@@ -91,6 +91,13 @@
             <version>2.5</version>
         </dependency>
 
+<!--        自定义配置文件处理-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
 
     </dependencies>
 
@@ -101,7 +108,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-        <!--加载mapper文件-->
+        <!--加载mapper文件和资源文件-->
         <resources>
             <resource>
                 <directory>src/main/java</directory>
@@ -109,6 +116,13 @@
                     <include>**/*.xml</include>
                 </includes>
             </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
+
         </resources>
     </build>
 
