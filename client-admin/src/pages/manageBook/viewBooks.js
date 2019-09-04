@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import { PageHeaderWrapper } from '@ant-design/pro-layout/lib/index';
-import {Button, Divider, Table} from 'antd';
+import {Button, Divider, Table,Modal} from 'antd';
 import styles from './style.less';
 import { connect } from 'dva';
 import GlobalEnum from "../../utils/GlobalEnum";
+
+
+const { confirm } = Modal;
+
+
 
 @connect(({ book }) => ({
   book,
@@ -41,9 +46,35 @@ class ViewBooks extends Component {
 
   handleFile=text=>{
 
-    window.open(GlobalEnum.location+`/admin/book/fetchBookFile?filePath=`+encodeURI(text),"_blank")
+    window.open(GlobalEnum.location+`/admin/book/fetchBookFile?filePath=`+encodeURI(text),"_self")
 
 
+  };
+
+  showDeleteConfirm=(id)=> {
+    const {dispatch}=this.props;
+
+    confirm({
+      title: '提示',
+      content: '确定删除这条记录？',
+      okText: '是',
+      okType: 'danger',
+      cancelText: '否',
+      onOk() {
+
+
+        dispatch({
+          type:'book/deleteBook',
+          payload:{
+            id:id,
+          }
+        });
+
+      },
+      onCancel() {
+
+      },
+    });
   };
 
   render() {
@@ -108,12 +139,13 @@ class ViewBooks extends Component {
         dataIndex: 'operation',
         key: 'operation',
         colspan:'2',
-        render:()=>{
+        render:(text,record)=>{
+          //console.log("each:"+JSON.stringify(record))
           return (
             <div>
               <a >编辑</a>
               <Divider type="vertical"/>
-              <a >删除</a>
+              <a onClick={()=>this.showDeleteConfirm(record.id)}>删除</a>
             </div>
           )
         }

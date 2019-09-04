@@ -75,9 +75,21 @@ public class BookAdminController {
 
         }catch (Exception e){
             e.printStackTrace();
-            //return RestWrapper.error(e.getMessage());
         }
-        //return RestWrapper.success();
+    }
+
+    @RequestMapping("/deleteBook/{id}")
+    public RestVO deleteBook(@PathVariable("id")String bookId){
+
+        try{
+            bookServiceAdmin.deleteBook(bookId);
+            return RestWrapper.success("删除成功！");
+        }catch (Exception e){
+            e.printStackTrace();
+            System.err.println(e.getMessage());
+            return RestWrapper.error(e.getMessage());
+        }
+
     }
 
 

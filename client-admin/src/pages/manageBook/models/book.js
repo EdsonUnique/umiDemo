@@ -1,4 +1,4 @@
-import {fetchBookList,addBook,fetchTags} from '@/services/bookApi'
+import {fetchBookList,addBook,fetchTags,deleteBook} from '@/services/bookApi'
 import {message} from 'antd';
 import router from 'umi/router';
 
@@ -54,6 +54,20 @@ const BookModel = {
         type:'fetchTagsSuccess',
          payload:response.data,
       })
+
+    },
+
+    *deleteBook({payload},{call,put}){
+      const response=yield call(deleteBook,payload)
+
+      if(response.code<=0){
+        message.error(response.msg);
+        return;
+      }
+
+      message.success(response.msg);
+
+
 
     }
 

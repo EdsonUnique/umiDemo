@@ -34,8 +34,7 @@ const props = {
 };
 
 function beforeUpload(file) {
-  console.log(file.type)
-  const isRightFile = file.type === 'application/msword';
+  const isRightFile = file.type === 'application/msword' || file.type==='application/vnd.openxmlformats-officedocument.wordprocessingml.document';
   if (!isRightFile) {
     message.error('请上传word类型文件!');
   }
@@ -198,7 +197,7 @@ class AddBook extends Component {
                 <Upload {...props}
                         accept=".doc,.docx"
                         beforeUpload={beforeUpload}
-                        multiple="false"
+                        multiple={false}
                 >
                   <Button>
                     <Icon type="upload" /> 点击上传

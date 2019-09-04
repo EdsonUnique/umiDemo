@@ -11,4 +11,6 @@ public interface BookServiceAdmin {
 
     void addBook(BookAdminModel bookAdminModel) throws Exception;
 
+    void deleteBook(String bookId) throws Exception;
+
 }

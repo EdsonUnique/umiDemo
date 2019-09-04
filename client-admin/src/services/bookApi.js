@@ -19,3 +19,7 @@ export async function addBook(params) {
 export async function fetchTags() {
   return request(GlobalEnum.location+'/admin/common/fetchTags');
 }
+
+export async function deleteBook(params) {
+  return request(GlobalEnum.location+'/admin/book/deleteBook/'+params.id);
+}

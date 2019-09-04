@@ -1,5 +1,6 @@
 package book.serverAdmin.service.impl;
 
+import book.entity.Book;
 import book.entityMapper.BookMapper;
 import book.exceptions.MyException;
 import book.serverAdmin.model.BookAdminModel;
@@ -54,7 +55,22 @@ public class BookServiceAdminImpl implements BookServiceAdmin {
 
     }
 
+    @Override
+    @Transactional
+    public void deleteBook(String bookId) throws Exception {
 
+        Book book=bookMapper.selectById(bookId);
+
+        if(null==book){
+            throw new MyException("该条记录不存在！");
+        }
+
+        int effectRow=bookMapper.deleteById(bookId);
+        if(effectRow<=0){
+            throw new MyException("删除操作失败！");
+        }
+
+    }
 
 
 }
