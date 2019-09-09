@@ -1,8 +1,26 @@
 import {fetchBookList,addBook,fetchTags,deleteBook} from '@/services/bookApi'
 import {message} from 'antd';
 import router from 'umi/router';
+import GlobalEnum from "../../../utils/GlobalEnum";
 
-const BookModel = {
+const initPage = (dispatch, { pathname, query, state }) => {
+  switch (pathname) {
+    case '/manageBook/viewBooks':
+      dispatch({
+        type: 'fetchBookList',
+        // 是否恢复页面状态
+        payload: {
+          pagenum:0,
+          pagesize:GlobalEnum.pagesize,
+        },
+      });
+      break;
+    default:
+      break
+  }
+};
+
+export default{
   namespace: 'book',
   state: {
     bookList: [],
@@ -27,9 +45,10 @@ const BookModel = {
 
     },
 
-    *addBook({payload},{call,put}){
+    *addBook({payload},{call,put,all}){
 
       const response=yield call(addBook,payload)
+
 
       if(response.code<=0){
         message.error(response.msg);
@@ -37,8 +56,6 @@ const BookModel = {
       }
 
       message.success(response.msg);
-
-      router.push("/manageBook/viewBooks")
 
     },
 
@@ -68,7 +85,6 @@ const BookModel = {
       message.success(response.msg);
 
 
-
     }
 
   },
@@ -92,6 +108,19 @@ const BookModel = {
 
   },
 
+    subscriptions: {
+      /**
+       * 初始化数据
+       * @param dispatch
+       * @param history
+       * @returns {*}
+       */
+      setup({ dispatch, history }) {
+        return history.listen(location => {
+          initPage(dispatch, location)
+        })
+      },
+    },
+
 
 }
-export default BookModel

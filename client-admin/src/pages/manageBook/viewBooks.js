@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { PageHeaderWrapper } from '@ant-design/pro-layout/lib/index';
-import {Button, Divider, Table,Modal} from 'antd';
+import {Button, Divider, Table, Modal, Spin} from 'antd';
 import styles from './style.less';
 import { connect } from 'dva';
 import GlobalEnum from "../../utils/GlobalEnum";
+import withRouter from 'umi/withRouter';
+import router from "umi/router"
+
 
 
 const { confirm } = Modal;
@@ -19,18 +22,18 @@ class ViewBooks extends Component {
 
   }
 
-  componentDidMount() {
-
-    const { dispatch } = this.props;
-
-    dispatch({
-      type: 'book/fetchBookList',
-      payload: {
-        pagenum: 0,
-        pagesize: GlobalEnum.pagesize,
-      },
-    })
-  }
+  // componentDidMount() {
+  //
+  //   const { dispatch } = this.props;
+  //
+  //   dispatch({
+  //     type: 'book/fetchBookList',
+  //     payload: {
+  //       pagenum: 0,
+  //       pagesize: GlobalEnum.pagesize,
+  //     },
+  //   })
+  // }
 
   handleChangePage=(pagenum, pagesize) => {
     const { dispatch } = this.props;
@@ -68,7 +71,11 @@ class ViewBooks extends Component {
           payload:{
             id:id,
           }
+        }).then(()=>{
+          router.push("/manageBook/viewBooks")
         });
+
+
 
       },
       onCancel() {
@@ -164,10 +171,11 @@ class ViewBooks extends Component {
 
     return (
       <PageHeaderWrapper>
-        <Table className={styles.ETable} bordered={true} columns={columns} dataSource={bookList} pagination={pagination}/>
-      </PageHeaderWrapper>
+          <Table className={styles.ETable} bordered={true} columns={columns} dataSource={bookList} pagination={pagination}/>
+        </PageHeaderWrapper>
     );
   }
 }
 
-export default ViewBooks;
+// export default ViewBooks;
+export default withRouter(connect()(ViewBooks));

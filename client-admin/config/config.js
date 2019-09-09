@@ -23,6 +23,7 @@ const plugins = [
         // default true, when it is true, will use `navigator.language` overwrite default
         baseNavigator: true,
       },
+      //disableDynamicImport: true,
       dynamicImport: {
         loadingComponent: './components/PageLoading/index',
         webpackChunkName: true,
@@ -190,13 +191,13 @@ export default {
     basePath: '/',
   },
   chainWebpack: webpackPlugin,
-  /*
-  proxy: {
-    '/server/api/': {
-      target: 'https://preview.pro.ant.design/',
-      changeOrigin: true,
-      pathRewrite: { '^/server': '' },
-    },
-  },
-  */
+
+  // proxy: {
+  //   '/api': {
+  //     target: 'https://www.baidu.com/',
+  //     changeOrigin: true,
+  //     pathRewrite: { '^/api': '' },
+  //   },
+  // },
+
 };

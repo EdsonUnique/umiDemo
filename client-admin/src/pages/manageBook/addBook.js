@@ -10,6 +10,8 @@ import {
   AutoComplete, Upload,
 } from 'antd';
 import { connect } from "dva";
+import GlobalEnum from "../../utils/GlobalEnum";
+import router from "umi/router"
 
 const { Option } = Select;
 const AutoCompleteOption = AutoComplete.Option;
@@ -78,6 +80,8 @@ class AddBook extends Component {
         dispatch({
           type:'book/addBook',
           payload:values,
+        }).then(()=>{
+          router.push("/manageBook/viewBooks")
         });
 
       }
